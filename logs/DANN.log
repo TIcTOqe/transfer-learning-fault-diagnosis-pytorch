@@ -1,0 +1,134 @@
+2026-08-29 15:30:43 | log_file: ./logs/DANN.log
+2026-08-29 15:30:43 | datadir: ./datasets
+2026-08-29 15:30:43 | source_dataname: CWRU
+2026-08-29 15:30:43 | target_dataname: CWRU
+2026-08-29 15:30:43 | s_load: 3
+2026-08-29 15:30:43 | t_load: 2
+2026-08-29 15:30:43 | s_label_set: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+2026-08-29 15:30:43 | t_label_set: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+2026-08-29 15:30:43 | val_rat: 0.3
+2026-08-29 15:30:43 | test_rat: 0.5
+2026-08-29 15:30:43 | seed: 29
+2026-08-29 15:30:43 | fft: False
+2026-08-29 15:30:43 | window: 128
+2026-08-29 15:30:43 | normalization: 0-1
+2026-08-29 15:30:43 | savemodel: False
+2026-08-29 15:30:43 | pretrained: False
+2026-08-29 15:30:43 | backbone: ResNet1D
+2026-08-29 15:30:43 | num_workers: 0
+2026-08-29 15:30:43 | batch_size: 256
+2026-08-29 15:30:43 | max_epoch: 100
+2026-08-29 15:30:43 | lr: 0.001
+2026-08-29 15:30:43 | lr_scheduler: stepLR
+2026-08-29 15:30:43 | gamma: 0.8
+2026-08-29 15:30:43 | steps: 30, 120
+2026-08-29 15:30:43 | optimizer: adam
+2026-08-29 15:30:43 | using 1 gpus
+2026-08-29 15:30:45 | training data/label shape: torch.Size([26474, 1, 1024]),torch.Size([26474])
+2026-08-29 15:30:45 | validation data/label shape: torch.Size([5673, 1, 1024]),torch.Size([5673])
+2026-08-29 15:30:45 | test data/label shape: torch.Size([5673, 1, 1024]),torch.Size([5673])
+2026-08-29 15:30:45 | training data/label shape: torch.Size([26474, 1, 1024]),torch.Size([26474])
+2026-08-29 15:30:45 | validation data/label shape: torch.Size([5673, 1, 1024]),torch.Size([5673])
+2026-08-29 15:30:45 | test data/label shape: torch.Size([5673, 1, 1024]),torch.Size([5673])
+2026-08-29 15:31:31 | Epoch:   1/100, loss_cls: 0.1949, loss: 0.8677, source_train_acc:  90.57%, target_train_acc:  81.13%, target_val_acc:  74.46%
+2026-08-29 15:32:10 | Epoch:   2/100, loss_cls: 0.0977, loss: 0.7903, source_train_acc:  98.11%, target_train_acc:  91.51%, target_val_acc:  81.67%
+2026-08-29 15:32:49 | Epoch:   3/100, loss_cls: 0.0340, loss: 0.7294, source_train_acc:  99.06%, target_train_acc:  89.62%, target_val_acc:  85.76%
+2026-08-29 15:33:29 | Epoch:   4/100, loss_cls: 0.0121, loss: 0.7162, source_train_acc: 100.00%, target_train_acc:  89.62%, target_val_acc:  82.67%
+2026-08-29 15:34:09 | Epoch:   5/100, loss_cls: 0.0194, loss: 0.7178, source_train_acc: 100.00%, target_train_acc:  89.62%, target_val_acc:  88.68%
+2026-08-29 15:34:48 | Epoch:   6/100, loss_cls: 0.0030, loss: 0.6938, source_train_acc: 100.00%, target_train_acc:  89.62%, target_val_acc:  87.45%
+2026-08-29 15:35:28 | Epoch:   7/100, loss_cls: 0.0279, loss: 0.7060, source_train_acc:  98.11%, target_train_acc:  91.51%, target_val_acc:  90.11%
+2026-08-29 15:36:07 | Epoch:   8/100, loss_cls: 0.0249, loss: 0.7104, source_train_acc:  99.06%, target_train_acc:  90.57%, target_val_acc:  85.76%
+2026-08-29 15:36:47 | Epoch:   9/100, loss_cls: 0.0059, loss: 0.6931, source_train_acc: 100.00%, target_train_acc:  94.34%, target_val_acc:  88.58%
+2026-08-29 15:37:27 | Epoch:  10/100, loss_cls: 0.0245, loss: 0.7296, source_train_acc:  99.06%, target_train_acc:  93.40%, target_val_acc:  89.58%
+2026-08-29 15:38:06 | Epoch:  11/100, loss_cls: 0.0051, loss: 0.6958, source_train_acc: 100.00%, target_train_acc:  86.79%, target_val_acc:  89.79%
+2026-08-29 15:38:46 | Epoch:  12/100, loss_cls: 0.0435, loss: 0.7415, source_train_acc:  98.11%, target_train_acc:  89.62%, target_val_acc:  78.64%
+2026-08-29 15:39:26 | Epoch:  13/100, loss_cls: 0.0021, loss: 0.7021, source_train_acc: 100.00%, target_train_acc:  92.45%, target_val_acc:  94.50%
+2026-08-29 15:40:06 | Epoch:  14/100, loss_cls: 0.0017, loss: 0.6951, source_train_acc: 100.00%, target_train_acc:  92.45%, target_val_acc:  93.04%
+2026-08-29 15:40:45 | Epoch:  15/100, loss_cls: 0.0023, loss: 0.6955, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  91.56%
+2026-08-29 15:41:25 | Epoch:  16/100, loss_cls: 0.0133, loss: 0.6977, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  93.57%
+2026-08-29 15:42:05 | Epoch:  17/100, loss_cls: 0.0029, loss: 0.7126, source_train_acc: 100.00%, target_train_acc:  93.40%, target_val_acc:  77.10%
+2026-08-29 15:42:45 | Epoch:  18/100, loss_cls: 0.0174, loss: 0.7059, source_train_acc:  99.06%, target_train_acc:  93.40%, target_val_acc:  81.03%
+2026-08-29 15:43:24 | Epoch:  19/100, loss_cls: 0.0031, loss: 0.7012, source_train_acc: 100.00%, target_train_acc:  94.34%, target_val_acc:  93.62%
+2026-08-29 15:44:04 | Epoch:  20/100, loss_cls: 0.0040, loss: 0.6997, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  95.47%
+2026-08-29 15:44:44 | Epoch:  21/100, loss_cls: 0.0018, loss: 0.6896, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  94.29%
+2026-08-29 15:45:24 | Epoch:  22/100, loss_cls: 0.0011, loss: 0.6993, source_train_acc: 100.00%, target_train_acc:  93.40%, target_val_acc:  93.04%
+2026-08-29 15:46:04 | Epoch:  23/100, loss_cls: 0.0002, loss: 0.6897, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  94.41%
+2026-08-29 15:46:44 | Epoch:  24/100, loss_cls: 0.0071, loss: 0.7054, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  95.13%
+2026-08-29 15:47:24 | Epoch:  25/100, loss_cls: 0.0057, loss: 0.7011, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  88.21%
+2026-08-29 15:48:03 | Epoch:  26/100, loss_cls: 0.0037, loss: 0.6966, source_train_acc: 100.00%, target_train_acc:  92.45%, target_val_acc:  94.57%
+2026-08-29 15:48:43 | Epoch:  27/100, loss_cls: 0.0007, loss: 0.6935, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  91.75%
+2026-08-29 15:49:23 | Epoch:  28/100, loss_cls: 0.0016, loss: 0.6860, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  93.65%
+2026-08-29 15:50:03 | Epoch:  29/100, loss_cls: 0.0004, loss: 0.6932, source_train_acc: 100.00%, target_train_acc:  92.45%, target_val_acc:  42.41%
+2026-08-29 15:50:43 | Epoch:  30/100, loss_cls: 0.0042, loss: 0.7071, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  96.76%
+2026-08-29 15:51:23 | Epoch:  31/100, loss_cls: 0.0020, loss: 0.6878, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  92.91%
+2026-08-29 15:52:03 | Epoch:  32/100, loss_cls: 0.0010, loss: 0.6970, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  80.96%
+2026-08-29 15:52:43 | Epoch:  33/100, loss_cls: 0.0018, loss: 0.6972, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  79.02%
+2026-08-29 15:53:23 | Epoch:  34/100, loss_cls: 0.0006, loss: 0.7098, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  93.41%
+2026-08-29 15:54:03 | Epoch:  35/100, loss_cls: 0.0005, loss: 0.6879, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  96.10%
+2026-08-29 15:54:43 | Epoch:  36/100, loss_cls: 0.0054, loss: 0.6980, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  91.93%
+2026-08-29 15:55:23 | Epoch:  37/100, loss_cls: 0.0012, loss: 0.7001, source_train_acc: 100.00%, target_train_acc:  94.34%, target_val_acc:  93.32%
+2026-08-29 15:56:02 | Epoch:  38/100, loss_cls: 0.0004, loss: 0.6929, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  95.91%
+2026-08-29 15:56:42 | Epoch:  39/100, loss_cls: 0.0017, loss: 0.6930, source_train_acc: 100.00%, target_train_acc:  94.34%, target_val_acc:  93.64%
+2026-08-29 15:57:22 | Epoch:  40/100, loss_cls: 0.0008, loss: 0.6980, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  95.93%
+2026-08-29 15:58:02 | Epoch:  41/100, loss_cls: 0.0002, loss: 0.6879, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  96.39%
+2026-08-29 15:58:42 | Epoch:  42/100, loss_cls: 0.0007, loss: 0.6933, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  86.36%
+2026-08-29 15:59:21 | Epoch:  43/100, loss_cls: 0.0001, loss: 0.6930, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  91.57%
+2026-08-29 16:00:01 | Epoch:  44/100, loss_cls: 0.0004, loss: 0.6929, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  97.81%
+2026-08-29 16:00:41 | Epoch:  45/100, loss_cls: 0.0001, loss: 0.6924, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  95.58%
+2026-08-29 16:01:21 | Epoch:  46/100, loss_cls: 0.0681, loss: 0.7602, source_train_acc:  99.06%, target_train_acc:  99.06%, target_val_acc:  90.69%
+2026-08-29 16:02:01 | Epoch:  47/100, loss_cls: 0.0007, loss: 0.6899, source_train_acc: 100.00%, target_train_acc:  94.34%, target_val_acc:  86.73%
+2026-08-29 16:02:40 | Epoch:  48/100, loss_cls: 0.0002, loss: 0.6845, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  97.66%
+2026-08-29 16:03:20 | Epoch:  49/100, loss_cls: 0.0006, loss: 0.6959, source_train_acc: 100.00%, target_train_acc:  94.34%, target_val_acc:  97.09%
+2026-08-29 16:04:00 | Epoch:  50/100, loss_cls: 0.0010, loss: 0.6908, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  96.47%
+2026-08-29 16:04:40 | Epoch:  51/100, loss_cls: 0.0000, loss: 0.6842, source_train_acc: 100.00%, target_train_acc:  95.28%, target_val_acc:  97.16%
+2026-08-29 16:05:20 | Epoch:  52/100, loss_cls: 0.0003, loss: 0.6930, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  91.93%
+2026-08-29 16:06:00 | Epoch:  53/100, loss_cls: 0.0001, loss: 0.6985, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  96.26%
+2026-08-29 16:06:39 | Epoch:  54/100, loss_cls: 0.0012, loss: 0.7007, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  97.18%
+2026-08-29 16:07:19 | Epoch:  55/100, loss_cls: 0.0293, loss: 0.7182, source_train_acc:  99.06%, target_train_acc:  95.28%, target_val_acc:  92.97%
+2026-08-29 16:07:59 | Epoch:  56/100, loss_cls: 0.0001, loss: 0.7022, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  74.02%
+2026-08-29 16:08:39 | Epoch:  57/100, loss_cls: 0.0001, loss: 0.6944, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.64%
+2026-08-29 16:09:19 | Epoch:  58/100, loss_cls: 0.0002, loss: 0.6925, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  95.12%
+2026-08-29 16:09:58 | Epoch:  59/100, loss_cls: 0.0017, loss: 0.7029, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  96.62%
+2026-08-29 16:10:38 | Epoch:  60/100, loss_cls: 0.0107, loss: 0.7031, source_train_acc:  99.06%, target_train_acc:  97.17%, target_val_acc:  95.22%
+2026-08-29 16:11:18 | Epoch:  61/100, loss_cls: 0.0001, loss: 0.6925, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.16%
+2026-08-29 16:11:58 | Epoch:  62/100, loss_cls: 0.0001, loss: 0.6970, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.37%
+2026-08-29 16:12:38 | Epoch:  63/100, loss_cls: 0.0002, loss: 0.6965, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  97.90%
+2026-08-29 16:13:18 | Epoch:  64/100, loss_cls: 0.0010, loss: 0.6914, source_train_acc: 100.00%, target_train_acc: 100.00%, target_val_acc:  97.23%
+2026-08-29 16:13:57 | Epoch:  65/100, loss_cls: 0.0000, loss: 0.6909, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.59%
+2026-08-29 16:14:37 | Epoch:  66/100, loss_cls: 0.0007, loss: 0.6946, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  98.20%
+2026-08-29 16:15:17 | Epoch:  67/100, loss_cls: 0.0006, loss: 0.6934, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  97.30%
+2026-08-29 16:15:57 | Epoch:  68/100, loss_cls: 0.0011, loss: 0.6905, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.50%
+2026-08-29 16:16:37 | Epoch:  69/100, loss_cls: 0.0003, loss: 0.6885, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  96.65%
+2026-08-29 16:17:16 | Epoch:  70/100, loss_cls: 0.0002, loss: 0.6918, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  98.06%
+2026-08-29 16:17:56 | Epoch:  71/100, loss_cls: 0.0001, loss: 0.6964, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  96.88%
+2026-08-29 16:18:36 | Epoch:  72/100, loss_cls: 0.0013, loss: 0.6962, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.60%
+2026-08-29 16:19:16 | Epoch:  73/100, loss_cls: 0.0021, loss: 0.6947, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  98.20%
+2026-08-29 16:19:55 | Epoch:  74/100, loss_cls: 0.0020, loss: 0.6945, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.50%
+2026-08-29 16:20:35 | Epoch:  75/100, loss_cls: 0.0009, loss: 0.6959, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  97.92%
+2026-08-29 16:21:15 | Epoch:  76/100, loss_cls: 0.0009, loss: 0.6948, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  97.92%
+2026-08-29 16:21:55 | Epoch:  77/100, loss_cls: 0.0010, loss: 0.6982, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  94.91%
+2026-08-29 16:22:35 | Epoch:  78/100, loss_cls: 0.0001, loss: 0.6915, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.76%
+2026-08-29 16:23:15 | Epoch:  79/100, loss_cls: 0.0484, loss: 0.7407, source_train_acc:  99.06%, target_train_acc:  95.28%, target_val_acc:  96.83%
+2026-08-29 16:23:54 | Epoch:  80/100, loss_cls: 0.0001, loss: 0.6908, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.83%
+2026-08-29 16:24:34 | Epoch:  81/100, loss_cls: 0.0098, loss: 0.7056, source_train_acc:  99.06%, target_train_acc:  97.17%, target_val_acc:  98.24%
+2026-08-29 16:25:14 | Epoch:  82/100, loss_cls: 0.0001, loss: 0.6932, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.92%
+2026-08-29 16:25:54 | Epoch:  83/100, loss_cls: 0.0048, loss: 0.6996, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  96.81%
+2026-08-29 16:26:34 | Epoch:  84/100, loss_cls: 0.0000, loss: 0.6919, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.59%
+2026-08-29 16:27:13 | Epoch:  85/100, loss_cls: 0.0002, loss: 0.6919, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  95.22%
+2026-08-29 16:27:53 | Epoch:  86/100, loss_cls: 0.0000, loss: 0.6946, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  97.25%
+2026-08-29 16:28:33 | Epoch:  87/100, loss_cls: 0.0001, loss: 0.6965, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.09%
+2026-08-29 16:29:13 | Epoch:  88/100, loss_cls: 0.0001, loss: 0.6910, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  97.78%
+2026-08-29 16:29:53 | Epoch:  89/100, loss_cls: 0.0210, loss: 0.7172, source_train_acc:  99.06%, target_train_acc:  99.06%, target_val_acc:  96.97%
+2026-08-29 16:30:32 | Epoch:  90/100, loss_cls: 0.0012, loss: 0.6934, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  96.86%
+2026-08-29 16:31:12 | Epoch:  91/100, loss_cls: 0.0000, loss: 0.6973, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  97.90%
+2026-08-29 16:31:53 | Epoch:  92/100, loss_cls: 0.0001, loss: 0.6913, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  98.18%
+2026-08-29 16:32:33 | Epoch:  93/100, loss_cls: 0.0000, loss: 0.6969, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  97.30%
+2026-08-29 16:33:13 | Epoch:  94/100, loss_cls: 0.0009, loss: 0.6945, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  96.53%
+2026-08-29 16:33:52 | Epoch:  95/100, loss_cls: 0.0001, loss: 0.7016, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  98.31%
+2026-08-29 16:34:32 | Epoch:  96/100, loss_cls: 0.0004, loss: 0.6916, source_train_acc: 100.00%, target_train_acc:  99.06%, target_val_acc:  97.04%
+2026-08-29 16:35:12 | Epoch:  97/100, loss_cls: 0.0006, loss: 0.6898, source_train_acc: 100.00%, target_train_acc:  97.17%, target_val_acc:  95.33%
+2026-08-29 16:35:52 | Epoch:  98/100, loss_cls: 0.0004, loss: 0.6951, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  98.31%
+2026-08-29 16:36:32 | Epoch:  99/100, loss_cls: 0.0001, loss: 0.6937, source_train_acc: 100.00%, target_train_acc:  98.11%, target_val_acc:  97.46%
+2026-08-29 16:37:12 | Epoch: 100/100, loss_cls: 0.0004, loss: 0.6973, source_train_acc: 100.00%, target_train_acc:  96.23%, target_val_acc:  89.78%
+2026-08-29 16:37:12 | Best accuracy: 98.3078
+2026-08-29 16:37:12 | ===============Done!===============
